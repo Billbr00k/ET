@@ -46,17 +46,20 @@ const About = () => {
                 <h2 className="text-2xl md:text-3xl font-display font-medium mb-6">Our Story</h2>
                 <div className="space-y-4 text-muted-foreground">
                   <p>
-                    Elegance was founded in 2018 with a simple mission: to create beautiful,
-                    functional furniture that enhances modern living spaces.
+                    Friends was founded in 2018 by a group of passionate Ethiopian entrepreneurs - Eyuel, Tibebe, Desse, and George. 
+                    United by their love for design and cultural heritage, they embarked on a mission to create furniture that honors 
+                    Ethiopian craftsmanship while embracing modern aesthetics.
                   </p>
                   <p>
-                    What began as a small workshop with three craftspeople has grown into a
-                    team of designers, artisans, and curators dedicated to bringing exceptional
-                    furniture into homes around the world.
+                    Growing up in Addis Ababa, the founders were surrounded by rich traditions of woodworking and furniture making. 
+                    They recognized that these skills were being lost as mass-produced furniture flooded the market. Determined to 
+                    preserve these artisanal techniques while creating pieces for contemporary living, they pooled their savings and 
+                    opened a small workshop in Addis.
                   </p>
                   <p>
-                    We believe that great design should be accessible, and that furniture can
-                    transform not just your space, but your daily experience within it.
+                    What began as a modest workshop with three skilled artisans has blossomed into a thriving design house. 
+                    Today, Friends collaborates with over twenty master craftspeople across Ethiopia, creating furniture that 
+                    tells the story of Ethiopia's rich cultural heritage while meeting the needs of modern homes around the world.
                   </p>
                 </div>
               </div>
@@ -115,41 +118,53 @@ const About = () => {
           <div className="container mx-auto px-4 md:px-8">
             <h2 className="text-2xl md:text-3xl font-display font-medium mb-12 text-center">Meet Our Team</h2>
             
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
               <div className="text-center">
                 <div className="rounded-full overflow-hidden w-40 h-40 mx-auto mb-4">
                   <img 
-                    src="https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=1961&auto=format&fit=crop"
-                    alt="Team member"
+                    src="https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?q=80&w=500&auto=format&fit=crop"
+                    alt="Eyuel - Co-Founder"
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <h3 className="text-lg font-medium">Emma Reid</h3>
-                <p className="text-sm text-muted-foreground">Founder & Lead Designer</p>
+                <h3 className="text-lg font-medium">Eyuel Tesfaye</h3>
+                <p className="text-sm text-muted-foreground">Co-Founder & Design Director</p>
               </div>
               
               <div className="text-center">
                 <div className="rounded-full overflow-hidden w-40 h-40 mx-auto mb-4">
                   <img 
-                    src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?q=80&w=1974&auto=format&fit=crop"
-                    alt="Team member"
+                    src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?q=80&w=500&auto=format&fit=crop"
+                    alt="Tibebe - Co-Founder"
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <h3 className="text-lg font-medium">Michael Chen</h3>
-                <p className="text-sm text-muted-foreground">Master Craftsman</p>
+                <h3 className="text-lg font-medium">Tibebe Assefa</h3>
+                <p className="text-sm text-muted-foreground">Co-Founder & Master Craftsman</p>
               </div>
               
               <div className="text-center">
                 <div className="rounded-full overflow-hidden w-40 h-40 mx-auto mb-4">
                   <img 
-                    src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1974&auto=format&fit=crop"
-                    alt="Team member"
+                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=500&auto=format&fit=crop"
+                    alt="Desse - Co-Founder"
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <h3 className="text-lg font-medium">Sophia Garcia</h3>
-                <p className="text-sm text-muted-foreground">Product Development</p>
+                <h3 className="text-lg font-medium">Desse Bekele</h3>
+                <p className="text-sm text-muted-foreground">Co-Founder & Production Lead</p>
+              </div>
+              
+              <div className="text-center">
+                <div className="rounded-full overflow-hidden w-40 h-40 mx-auto mb-4">
+                  <img 
+                    src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=500&auto=format&fit=crop"
+                    alt="George - Co-Founder"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <h3 className="text-lg font-medium">George Solomon</h3>
+                <p className="text-sm text-muted-foreground">Co-Founder & Business Director</p>
               </div>
             </div>
           </div>
