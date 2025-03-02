@@ -10,9 +10,9 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
           {/* Brand Column */}
           <div className="space-y-4">
-            <h3 className="font-display text-xl font-semibold">Elegance</h3>
+            <h3 className="font-display text-xl font-semibold">Friends</h3>
             <p className="text-sm text-muted-foreground max-w-xs">
-              Timeless furniture crafted with exceptional materials and meticulous attention to detail.
+              Ethiopian-inspired modern furniture crafted with exceptional materials and meticulous attention to detail.
             </p>
           </div>
           
@@ -59,7 +59,7 @@ const Footer = () => {
         </div>
         
         <div className="mt-16 pt-8 border-t border-border flex flex-col sm:flex-row justify-between items-center text-sm text-muted-foreground">
-          <p>© {currentYear} Elegance. All rights reserved.</p>
+          <p>© {currentYear} Friends. All rights reserved.</p>
           <div className="flex space-x-6 mt-4 sm:mt-0">
             <a href="#" className="hover:text-foreground transition-colors">Privacy</a>
             <a href="#" className="hover:text-foreground transition-colors">Terms</a>

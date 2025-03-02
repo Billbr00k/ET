@@ -48,17 +48,17 @@ const FeaturedSection = ({ title, products }: FeaturedSectionProps) => {
   };
   
   return (
-    <div className="my-16 md:my-24">
+    <div className="my-16 md:my-24 animate-fade-in" style={{ animationDelay: "100ms" }}>
       <div className="container mx-auto px-4 md:px-8">
         <div className="flex items-center justify-between mb-8">
-          <h2 className="text-2xl md:text-3xl font-display font-medium">{title}</h2>
+          <h2 className="text-2xl md:text-3xl font-display font-medium transform transition-all duration-500 hover:translate-x-2">{title}</h2>
           
           <div className="flex items-center gap-2">
             <button
               onClick={() => scroll("left")}
-              className={`p-2 rounded-full border border-border ${
+              className={`p-2 rounded-full border border-border transform transition-all duration-300 ${
                 showLeftArrow 
-                  ? "text-foreground hover:bg-secondary transition-colors" 
+                  ? "text-foreground hover:bg-secondary hover:scale-110" 
                   : "text-muted cursor-not-allowed"
               }`}
               disabled={!showLeftArrow}
@@ -68,9 +68,9 @@ const FeaturedSection = ({ title, products }: FeaturedSectionProps) => {
             </button>
             <button
               onClick={() => scroll("right")}
-              className={`p-2 rounded-full border border-border ${
+              className={`p-2 rounded-full border border-border transform transition-all duration-300 ${
                 showRightArrow 
-                  ? "text-foreground hover:bg-secondary transition-colors" 
+                  ? "text-foreground hover:bg-secondary hover:scale-110" 
                   : "text-muted cursor-not-allowed"
               }`}
               disabled={!showRightArrow}
@@ -85,10 +85,11 @@ const FeaturedSection = ({ title, products }: FeaturedSectionProps) => {
           ref={scrollContainerRef}
           className="flex gap-6 overflow-x-auto pb-4 scrollbar-none snap-x"
         >
-          {products.map(product => (
+          {products.map((product, index) => (
             <div 
               key={product.id} 
               className="min-w-[280px] md:min-w-[350px] snap-start"
+              style={{ animationDelay: `${index * 100}ms` }}
             >
               <ProductCard product={product} featured />
             </div>

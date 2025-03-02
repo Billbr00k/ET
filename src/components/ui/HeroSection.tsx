@@ -8,8 +8,8 @@ const HeroSection = () => {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?q=80&w=2158&auto=format&fit=crop"
-          alt="Modern living room interior"
+          src="/assets/hero-image.jpg" 
+          alt="Ethiopian modern furniture"
           className="w-full h-full object-cover object-center"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-background/80 to-background/10" />
@@ -19,25 +19,26 @@ const HeroSection = () => {
       <div className="container mx-auto px-4 md:px-8 z-10">
         <div className="max-w-xl">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-medium leading-tight animate-fade-in">
-            Elevate Your Space
+            <span className="block transition-transform duration-700 hover:translate-x-2">Friends</span>
+            <span className="text-3xl md:text-4xl lg:text-5xl block mt-1 text-foreground/80">Ethiopian Modern</span>
           </h1>
           
           <p className="mt-6 text-lg md:text-xl text-foreground/80 max-w-md animate-fade-in" style={{ animationDelay: "200ms" }}>
-            Discover premium furniture that balances elegant design with exceptional craftsmanship.
+            Discover premium furniture that balances Ethiopian cultural heritage with modern design and exceptional craftsmanship.
           </p>
           
           <div className="mt-8 flex flex-wrap gap-4 animate-fade-in" style={{ animationDelay: "400ms" }}>
             <Link
               to="/products"
-              className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-foreground text-background rounded-md font-medium hover:bg-foreground/90 transition-colors"
+              className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-foreground text-background rounded-md font-medium hover:bg-foreground/90 transition-colors transform transition-transform hover:-translate-y-1"
             >
               Shop Collection
-              <ArrowRight className="w-4 h-4" />
+              <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
             </Link>
             
             <Link
               to="/about"
-              className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-transparent border border-foreground text-foreground rounded-md font-medium hover:bg-foreground/5 transition-colors"
+              className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-transparent border border-foreground text-foreground rounded-md font-medium hover:bg-foreground/5 transition-colors transform transition-transform hover:-translate-y-1"
             >
               Our Story
             </Link>
