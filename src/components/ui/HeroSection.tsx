@@ -8,7 +8,7 @@ const HeroSection = () => {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="/assets/hero-image.jpg" 
+          src="/assets/hero-image.png" 
           alt="Ethiopian modern furniture"
           className="w-full h-full object-cover object-center"
         />
@@ -19,8 +19,7 @@ const HeroSection = () => {
       <div className="container mx-auto px-4 md:px-8 z-10">
         <div className="max-w-xl">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-medium leading-tight animate-fade-in">
-            <span className="block transition-transform duration-700 hover:translate-x-2">Friends</span>
-            <span className="text-3xl md:text-4xl lg:text-5xl block mt-1 text-foreground/80">Ethiopian Modern</span>
+            <span className="block transition-transform duration-700 hover:translate-x-2">ET Interior and Furniture</span>
           </h1>
           
           <p className="mt-6 text-lg md:text-xl text-foreground/80 max-w-md animate-fade-in" style={{ animationDelay: "200ms" }}>

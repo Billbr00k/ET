@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
           {/* Brand Column */}
           <div className="space-y-4">
-            <h3 className="font-display text-xl font-semibold">Friends</h3>
+            <h3 className="font-display text-xl font-semibold">ET Interior and Furniture</h3>
             <p className="text-sm text-muted-foreground max-w-xs">
               Ethiopian-inspired modern furniture crafted with exceptional materials and meticulous attention to detail.
             </p>
@@ -26,16 +26,6 @@ const Footer = () => {
             </ul>
           </div>
           
-          {/* Support Column */}
-          <div className="space-y-4">
-            <h4 className="font-medium text-sm uppercase tracking-wider">Support</h4>
-            <ul className="space-y-2">
-              <li><a href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Contact</a></li>
-              <li><a href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Shipping</a></li>
-              <li><a href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Returns</a></li>
-              <li><a href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">FAQ</a></li>
-            </ul>
-          </div>
           
           {/* Newsletter Column */}
           <div className="space-y-4">
@@ -59,7 +49,7 @@ const Footer = () => {
         </div>
         
         <div className="mt-16 pt-8 border-t border-border flex flex-col sm:flex-row justify-between items-center text-sm text-muted-foreground">
-          <p>© {currentYear} Friends. All rights reserved.</p>
+          <p>© {currentYear} ET Interior and Furnitures. All rights reserved.</p>
           <div className="flex space-x-6 mt-4 sm:mt-0">
             <a href="#" className="hover:text-foreground transition-colors">Privacy</a>
             <a href="#" className="hover:text-foreground transition-colors">Terms</a>

@@ -15,14 +15,14 @@ const ProductCard = ({ product, featured = false }: ProductCardProps) => {
   
   return (
     <div 
-      className={`group relative overflow-hidden rounded-lg bg-white border border-border hover-lift transform transition-all duration-500 hover:-translate-y-2 hover:shadow-lg ${
+      className={`group relative overflow-hidden rounded-lg bg-white border border-border hover-lift transform transition-all duration-500 hover:-translate-y-2 hover:shadow-lg Etb {
         featured ? "aspect-square md:aspect-[3/4]" : "aspect-[3/4]"
       }`}
     >
       {/* Image */}
-      <Link to={`/product/${product.id}`} className="block h-full overflow-hidden">
+      <Link to={`/product/Etb {product.id}`} className="block h-full overflow-hidden">
         <div 
-          className={`relative w-full h-full transition-transform duration-500 ease-out group-hover:scale-105 ${
+          className={`relative w-full h-full transition-transform duration-500 ease-out group-hover:scale-105 Etb {
             imageLoaded ? "" : "bg-muted shimmer"
           }`}
         >
@@ -30,7 +30,7 @@ const ProductCard = ({ product, featured = false }: ProductCardProps) => {
             src={product.images[0]}
             alt={product.name}
             onLoad={() => setImageLoaded(true)}
-            className={`w-full h-full object-cover transition-opacity ${
+            className={`w-full h-full object-cover transition-opacity Etb {
               imageLoaded ? "opacity-100 image-fade-in" : "opacity-0"
             }`}
           />
@@ -55,7 +55,7 @@ const ProductCard = ({ product, featured = false }: ProductCardProps) => {
       {/* Product info */}
       <div className="absolute top-0 left-0 right-0 p-4 glass backdrop-blur-md transition-all duration-300 group-hover:backdrop-blur-lg">
         <h3 className="font-medium truncate">{product.name}</h3>
-        <p className="text-muted-foreground text-sm mt-1">${product.price.toLocaleString()}</p>
+        <p className="text-muted-foreground text-sm mt-1">Etb {product.price.toLocaleString()}</p>
       </div>
     </div>
   );

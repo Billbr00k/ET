@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { ShoppingCart, Menu, X } from "lucide-react";
@@ -36,13 +35,7 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-4 md:px-8">
         <div className="flex items-center justify-between">
-          {/* Logo */}
-          <Link 
-            to="/" 
-            className="text-xl md:text-2xl font-display font-semibold tracking-tight hover:opacity-80 transition-opacity"
-          >
-            Friends
-          </Link>
+          <img src="/assets/logos/logo.png" alt="ET Interior and Furnitures" className="h-12 md:h-19" />
           
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">

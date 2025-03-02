@@ -128,7 +128,7 @@ const ShoppingCart = () => {
                   {/* Item subtotal & remove */}
                   <div className="flex flex-col items-end justify-between">
                     <span className="font-medium">
-                      ${(item.product.price * item.quantity).toLocaleString()}
+                      Etb{(item.product.price * item.quantity).toLocaleString()}
                     </span>
                     <button 
                       onClick={() => removeFromCart(item.product.id)}
@@ -150,7 +150,7 @@ const ShoppingCart = () => {
             <div className="p-6">
               <div className="flex items-center justify-between mb-4">
                 <span className="text-muted-foreground">Subtotal</span>
-                <span className="font-medium">${totalPrice.toLocaleString()}</span>
+                <span className="font-medium">Etb{totalPrice.toLocaleString()}</span>
               </div>
               <button 
                 className="w-full py-3 bg-foreground text-background rounded-md font-medium hover:bg-foreground/90 transition-colors"

@@ -46,7 +46,7 @@ const About = () => {
                 <h2 className="text-2xl md:text-3xl font-display font-medium mb-6">Our Story</h2>
                 <div className="space-y-4 text-muted-foreground">
                   <p>
-                    Friends was founded in 2018 by a group of passionate Ethiopian entrepreneurs - Eyuel, Tibebe, Desse, and George. 
+                    ET Interior and Furnitures, was founded in 2024 by a group of passionate Ethiopian entrepreneurs. 
                     United by their love for design and cultural heritage, they embarked on a mission to create furniture that honors 
                     Ethiopian craftsmanship while embracing modern aesthetics.
                   </p>
@@ -58,9 +58,52 @@ const About = () => {
                   </p>
                   <p>
                     What began as a modest workshop with three skilled artisans has blossomed into a thriving design house. 
-                    Today, Friends collaborates with over twenty master craftspeople across Ethiopia, creating furniture that 
+                    Today, ET collaborates with over twenty master craftspeople across Ethiopia, creating furniture that 
                     tells the story of Ethiopia's rich cultural heritage while meeting the needs of modern homes around the world.
                   </p>
+                  <p>Our Products
+For Homeowners & Real Estate Developers Who Demand Excellence
+
+At ET Interior and Furniture, we transform spaces into timeless reflections of individuality and sophistication. Specializing in bespoke, handcrafted furniture designed for durability and elegance, we cater to those who seek to elevate their living and working environments. Whether you’re a homeowner curating your dream space or a developer aiming to captivate buyers, our collections merge artistry with functionality to deliver unmatched value.
+</p>
+<p>What We Craft <br />
+1. Custom-Made Indoor Collections
+
+Living Rooms: Slept-on sofas, statement coffee tables, and modular shelving systems that balance modern aesthetics with Ethiopian warmth.
+
+Kitchens: Graceful cabinetry with soft-close hinges, premium countertops, and space-maximizing storage tailored to Addis Ababa’s urban lifestyles.
+
+Bedrooms: Serene beds, ergonomic wardrobes, and ambient lighting solutions designed for restful retreats.
+< br/>
+2. Weather-Resistant Outdoor Solutions
+
+Durable dining sets, lounge chairs, and pergolas crafted from UV-resistant teak, powder-coated metals, and all-weather wicker—perfect for Addis Ababa’s climate.
+<br />
+3. Developer-Focused Packages
+
+Bulk Furniture Manufacturing: Cost-effective, stylish sets for apartments, offices, and hotels that accelerate property turnover.
+
+Model Home Furnishings: Turnkey interiors that showcase a property’s potential, from minimalist studios to luxury penthouses.
+<br />
+</p> <p>
+Why Our Products Stand Out <br />
+✅ Ethiopian Craftsmanship, Global Quality:
+
+Locally sourced kiln-dried hardwoods, hypoallergenic upholstery, and rustproof hardware ensure longevity.
+<br />✅ Tailored to You:
+
+Collaborate with our designers to customize dimensions, finishes, and fabrics—no two pieces are alike.
+<br />✅ Style That Sells:
+
+Modern silhouettes with subtle cultural motifs appeal to broad audiences, enhancing property marketability.
+<br />✅ Built for Life:
+
+Reinforced joints, scratch-resistant surfaces, and 5-year warranties guarantee lasting value.
+
+Your Vision, Perfected
+From concept sketches to final installation, we ensure every piece aligns with your vision. Whether you’re furnishing a cozy bungalow in Bole or a high-rise in Kazanchis, our furniture isn’t just functional—it’s a statement.
+
+“Where comfort meets craftsmanship, and every space tells a story.”</p>
                 </div>
               </div>
               
@@ -127,7 +170,7 @@ const About = () => {
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <h3 className="text-lg font-medium">Eyuel Tesfaye</h3>
+                <h3 className="text-lg font-medium">Eyuel Ayele</h3>
                 <p className="text-sm text-muted-foreground">Co-Founder & Design Director</p>
               </div>
               
@@ -139,7 +182,7 @@ const About = () => {
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <h3 className="text-lg font-medium">Tibebe Assefa</h3>
+                <h3 className="text-lg font-medium">Tibebe Ketsela</h3>
                 <p className="text-sm text-muted-foreground">Co-Founder & Master Craftsman</p>
               </div>
               
@@ -151,8 +194,8 @@ const About = () => {
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <h3 className="text-lg font-medium">Desse Bekele</h3>
-                <p className="text-sm text-muted-foreground">Co-Founder & Production Lead</p>
+                <h3 className="text-lg font-medium">Kidist Gezahegn</h3>
+                <p className="text-sm text-muted-foreground">Assistant & Support</p>
               </div>
               
               <div className="text-center">
@@ -163,8 +206,8 @@ const About = () => {
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <h3 className="text-lg font-medium">George Solomon</h3>
-                <p className="text-sm text-muted-foreground">Co-Founder & Business Director</p>
+                <h3 className="text-lg font-medium">Yabsra Jhonny</h3>
+                <p className="text-sm text-muted-foreground">Interior Designer</p>
               </div>
             </div>
           </div>
