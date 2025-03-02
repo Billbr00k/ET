@@ -41,7 +41,7 @@ const Navbar = () => {
             to="/" 
             className="text-xl md:text-2xl font-display font-semibold tracking-tight hover:opacity-80 transition-opacity"
           >
-            Elegance
+            Friends
           </Link>
           
           {/* Desktop Navigation */}
