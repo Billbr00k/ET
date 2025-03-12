@@ -16,6 +16,7 @@ const ShoppingCart = () => {
   
   const cartRef = useRef<HTMLDivElement>(null);
   const [isOrderFormVisible, setIsOrderFormVisible] = useState(false);
+  const [isSuccessMessageVisible, setIsSuccessMessageVisible] = useState(false);
   
   // Handle click outside to close cart
   useEffect(() => {
@@ -56,16 +57,8 @@ const ShoppingCart = () => {
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     clearCart();
-    toast.success("Your order has been requested successfully! Our agents will contact you soon!", {
-      icon: "✔️",
-      duration: 5000,
-      style: {
-        background: "#4caf50",
-        color: "#fff",
-      },
-    });
     setIsOrderFormVisible(false);
-    setIsCartOpen(false);
+    setIsSuccessMessageVisible(true);
   };
 
   return (
@@ -166,7 +159,7 @@ const ShoppingCart = () => {
         </div>
         
         {/* Footer */}
-        {cartItems.length > 0 && !isOrderFormVisible && (
+        {cartItems.length > 0 && !isOrderFormVisible && !isSuccessMessageVisible && (
           <div className="absolute bottom-0 left-0 right-0 bg-background border-t border-border">
             <div className="p-6">
               <div className="flex items-center justify-between mb-4">
@@ -236,6 +229,21 @@ const ShoppingCart = () => {
                 Submit
               </button>
             </form>
+          </div>
+        )}
+
+        {/* Success Message */}
+        {isSuccessMessageVisible && (
+          <div className="absolute bottom-0 left-0 right-0 bg-background border-t border-border p-6 animate-right">
+            <div className="text-center">
+              <p className="text-lg font-medium mb-4">Thank you for ordering! Our agents will be with you shortly!</p>
+              <button 
+                onClick={() => setIsCartOpen(false)}
+                className="w-full py-3 bg-foreground text-background rounded-md font-medium hover:bg-foreground/90 transition-colors"
+              >
+                Continue Shopping
+              </button>
+            </div>
           </div>
         )}
       </div>
