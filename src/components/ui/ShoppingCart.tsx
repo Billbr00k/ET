@@ -1,7 +1,7 @@
-
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { X, Trash, Plus, Minus } from "lucide-react";
 import { useCart } from "../../context/CartContext";
+import { toast } from "react-hot-toast";
 
 const ShoppingCart = () => {
   const { 
@@ -10,10 +10,12 @@ const ShoppingCart = () => {
     updateQuantity, 
     totalPrice,
     isCartOpen, 
-    setIsCartOpen 
+    setIsCartOpen,
+    clearCart
   } = useCart();
   
   const cartRef = useRef<HTMLDivElement>(null);
+  const [isOrderFormVisible, setIsOrderFormVisible] = useState(false);
   
   // Handle click outside to close cart
   useEffect(() => {
@@ -47,6 +49,25 @@ const ShoppingCart = () => {
   
   if (!isCartOpen) return null;
   
+  const handleOrder = () => {
+    setIsOrderFormVisible(true);
+  };
+
+  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    clearCart();
+    toast.success("Your order has been requested successfully! Our agents will contact you soon!", {
+      icon: "✔️",
+      duration: 5000,
+      style: {
+        background: "#4caf50",
+        color: "#fff",
+      },
+    });
+    setIsOrderFormVisible(false);
+    setIsCartOpen(false);
+  };
+
   return (
     <div className="fixed inset-0 z-50 bg-black/30 backdrop-blur-sm">
       <div 
@@ -145,7 +166,7 @@ const ShoppingCart = () => {
         </div>
         
         {/* Footer */}
-        {cartItems.length > 0 && (
+        {cartItems.length > 0 && !isOrderFormVisible && (
           <div className="absolute bottom-0 left-0 right-0 bg-background border-t border-border">
             <div className="p-6">
               <div className="flex items-center justify-between mb-4">
@@ -153,9 +174,10 @@ const ShoppingCart = () => {
                 <span className="font-medium">Etb{totalPrice.toLocaleString()}</span>
               </div>
               <button 
+                onClick={handleOrder}
                 className="w-full py-3 bg-foreground text-background rounded-md font-medium hover:bg-foreground/90 transition-colors"
               >
-                Checkout
+                Order
               </button>
               <button 
                 onClick={() => setIsCartOpen(false)}
@@ -164,6 +186,56 @@ const ShoppingCart = () => {
                 Continue Shopping
               </button>
             </div>
+          </div>
+        )}
+
+        {/* Order Form */}
+        {isOrderFormVisible && (
+          <div className="absolute bottom-0 left-0 right-0 bg-background border-t border-border p-6">
+            <form 
+              name="order-form" 
+              method="POST" 
+              data-netlify="true" 
+              onSubmit={handleSubmit}
+            >
+              <input type="hidden" name="form-name" value="order-form" />
+              <div className="mb-4">
+                <label className="block text-sm font-medium mb-2" htmlFor="name">Name</label>
+                <input 
+                  type="text" 
+                  id="name" 
+                  name="name" 
+                  required 
+                  className="w-full px-3 py-2 border border-border rounded-md"
+                />
+              </div>
+              <div className="mb-4">
+                <label className="block text-sm font-medium mb-2" htmlFor="email">Email</label>
+                <input 
+                  type="email" 
+                  id="email" 
+                  name="email" 
+                  required 
+                  className="w-full px-3 py-2 border border-border rounded-md"
+                />
+              </div>
+              <div className="mb-4">
+                <label className="block text-sm font-medium mb-2" htmlFor="phone">Phone</label>
+                <input 
+                  type="tel" 
+                  id="phone" 
+                  name="phone" 
+                  required 
+                  className="w-full px-3 py-2 border border-border rounded-md"
+                />
+              </div>
+              <button 
+                type="submit" 
+                className="w-full py-3 bg-foreground text-background rounded-md font-medium hover:bg-foreground/90 transition-colors"
+              >
+                Submit
+              </button>
+            </form>
           </div>
         )}
       </div>
